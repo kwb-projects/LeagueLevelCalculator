@@ -1,9 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>League Level Calculator</title>
-    <meta property="og:url" content="https://kwb-projects.github.io/LeaguePurityTest/" />
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="container">
+        <h1>League Level Calculator</h1>
+        <form id="levelForm" autocomplete="off">
+            <label for="currentLevel">Current Level</label>
+            <input type="number" id="currentLevel" name="currentLevel" min="1" required>
+
+            <label for="goalLevel">Goal Level</label>
+            <input type="number" id="goalLevel" name="goalLevel" min="1" required>
+
+            <button type="submit">Calculate</button>
+        </form>
+        <div class="result" id="result" style="display:none;"></div>
+    </div>
+    <script src="script.js"></script>
 </body>
+</html>

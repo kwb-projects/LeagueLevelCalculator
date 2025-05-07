@@ -1,0 +1,105 @@
+body {
+    background: linear-gradient(135deg, #2d192c 0%, #1a1020 100%);
+    color: #fff;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: rgba(58, 34, 58, 0.98);
+    padding: 2.5rem 2.5rem 2rem 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+    margin-top: 3.5rem;
+    width: 100%;
+    max-width: 420px;
+    transition: box-shadow 0.2s;
+}
+.container:hover {
+    box-shadow: 0 12px 40px rgba(233,79,124,0.15);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+    color: #e94f7c;
+    text-shadow: 0 2px 8px rgba(233,79,124,0.08);
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 0.7rem 1rem;
+    border-radius: 8px;
+    border: 1.5px solid #4a2a4a;
+    background: #251326;
+    color: #fff;
+    margin-bottom: 1.4rem;
+    font-size: 1.08rem;
+    transition: border 0.2s, box-shadow 0.2s;
+    outline: none;
+}
+input[type="number"]:focus {
+    border: 1.5px solid #e94f7c;
+    box-shadow: 0 0 0 2px rgba(233,79,124,0.15);
+}
+
+button {
+    width: 100%;
+    padding: 0.85rem;
+    background: linear-gradient(90deg, #e94f7c 60%, #a84fd6 100%);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.15rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(233,79,124,0.10);
+    transition: background 0.2s, box-shadow 0.2s, transform 0.1s;
+    margin-top: 0.2rem;
+}
+button:hover, button:focus {
+    background: linear-gradient(90deg, #c43c65 60%, #7a3fa6 100%);
+    box-shadow: 0 4px 16px rgba(233,79,124,0.18);
+    transform: translateY(-2px) scale(1.02);
+}
+
+.result {
+    margin-top: 2rem;
+    background: linear-gradient(90deg, #251326 60%, #2d192c 100%);
+    padding: 1.2rem 1rem;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 1.13rem;
+    box-shadow: 0 2px 12px rgba(58,34,58,0.10);
+    border: 1.5px solid #4a2a4a;
+    color: #fff;
+    min-height: 60px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 1.2rem 0.5rem 1rem 0.5rem;
+        margin-top: 1.2rem;
+        max-width: 98vw;
+    }
+    h1 {
+        font-size: 1.4rem;
+    }
+    .result {
+        font-size: 1rem;
+        padding: 0.8rem 0.2rem;
+    }
+} 
